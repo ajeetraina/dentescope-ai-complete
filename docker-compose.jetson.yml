@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: dentescope-backend:latest
+    container_name: dentescope-backend
+    runtime: nvidia
+    restart: unless-stopped
+    
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MODEL_PATH=/app/model/dental_detector.pt
+    
+    ports:
+      - "8000:8000"
+    
+    volumes:
+      - ./model:/app/model:ro
+      - ./data:/app/data
+    
+    networks:
+      - dentescope-net
+    
+    depends_on:
+      - redis
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: dentescope-frontend:latest
+    container_name: dentescope-frontend
+    restart: unless-stopped
+    
+    ports:
+      - "3000:80"
+    
+    networks:
+      - dentescope-net
+    
+    depends_on:
+      - backend
+
+  redis:
+    image: redis:7-alpine
+    container_name: dentescope-redis
+    restart: unless-stopped
+    
+    ports:
+      - "6379:6379"
+    
+    networks:
+      - dentescope-net
+
+networks:
+  dentescope-net:
+    driver: bridge
