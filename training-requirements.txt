@@ -1,0 +1,20 @@
+# DenteScope AI Training Requirements
+
+# Core ML/AI frameworks
+ultralytics>=8.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+
+# Data handling
+pandas>=2.0.0
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Image processing
+scikit-image>=0.21.0
+
+# Visualization
+matplotlib>=3.7.0
