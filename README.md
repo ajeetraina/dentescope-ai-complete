@@ -33,6 +33,12 @@
 - [Contributing](#-contributing)
 - [Contact](#-contact)
 
+Special Thanks to:
+- [Raveendiran RR](https://www.raveendiran.com/) for all the brainstorming and ideas
+- [Manish L](https://www.linkedin.com/in/manish-l-b3a002310/) for his effective co-ordination
+- [Jeevitha S](https://www.linkedin.com/in/jeevitha-s-48b8ab270/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) for the annotations
+- [Jalaj Krishna](https://www.linkedin.com/in/jalaj-krishna/overlay/about-this-profile/) for his helping hands
+
 ---
 
 ## 🌐 Live Demo
