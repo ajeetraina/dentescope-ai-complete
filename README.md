@@ -49,52 +49,6 @@ We extend our heartfelt gratitude to the following individuals who made this pro
 - [Jalaj Krishna](https://www.linkedin.com/in/jalaj-krishna/overlay/about-this-profile/)  - For continuous support, problem-solving assistance, and being there whenever the team needed help
 
 
----
-
-### 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-### 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ajeetraina/dentescope-ai-complete/issues).
-
-### ⭐ Show Your Support
-
-If this project helped you or you found it interesting, please consider giving it a ⭐️ on GitHub!
-
----
-
-**Built with ❤️ by the Collabnix Community**
-Alternative Compact Version:
-
-markdown
-## 🙏 Acknowledgments
-
-### Project Team (RajaRajeshwari College of Engineering)
-
-This project emerged from our Docker Bangalore and Collabnix Meetup collaboration:
-
-| Name | Contribution |
-|------|-------------|
-| **Raveendiran RR** | Brainstorming, Technical Ideas & Guidance |
-| **Manish L** | Project Coordination & Team Management |
-| **Jeevitha S** | Dataset Annotation & Quality Assurance |
-| **Jalaj Krishna** | Technical Support & Problem Solving |
-
-### Technology Partners
-
-- 🐳 **Docker** - Containerization platform and community support
-- 🚀 **NVIDIA** - Jetson AGX Thor hardware and CUDA infrastructure
-- 🤖 **Ultralytics** - YOLOv8 framework
-- 🤗 **Hugging Face** - Model hosting and deployment
-- 👥 **Collabnix** - Community support (17,000+ members)
-
----
-
-*A collaborative effort bringing together
-
-
 
 ## 🌐 Live Demo
 
