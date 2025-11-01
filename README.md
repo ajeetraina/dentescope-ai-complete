@@ -33,13 +33,68 @@
 - [Contributing](#-contributing)
 - [Contact](#-contact)
 
-Special Thanks to:
-- [Raveendiran RR](https://www.raveendiran.com/) for all the brainstorming and ideas
-- [Manish L](https://www.linkedin.com/in/manish-l-b3a002310/) for his effective co-ordination
-- [Jeevitha S](https://www.linkedin.com/in/jeevitha-s-48b8ab270/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) for the annotations
-- [Jalaj Krishna](https://www.linkedin.com/in/jalaj-krishna/overlay/about-this-profile/) for his helping hands
+---
+
+## 🙏 Acknowledgments
+
+This project was inspired by our meeting with students from **RajaRajeshwari College of Engineering** at the **Docker Bangalore and Collabnix Meetup**. Their enthusiasm for applying containerization and AI to solve real-world healthcare problems sparked the journey that became DenteScope AI.
+
+### Special Thanks
+
+We extend our heartfelt gratitude to the following individuals who made this project possible:
+
+- [Raveendiran RR](https://www.raveendiran.com/) - For invaluable brainstorming sessions, innovative ideas, and technical guidance throughout the project development
+- [Manish L](https://www.linkedin.com/in/manish-l-b3a002310/) - For excellent project coordination, keeping the team aligned, and ensuring smooth collaboration across all phases
+- [Jeevitha S](https://www.linkedin.com/in/jeevitha-s-48b8ab270/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  - For meticulous annotation work and quality assurance, contributing to the dataset preparation that made our training possible
+- [Jalaj Krishna](https://www.linkedin.com/in/jalaj-krishna/overlay/about-this-profile/)  - For continuous support, problem-solving assistance, and being there whenever the team needed help
+
 
 ---
+
+### 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+### 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/ajeetraina/dentescope-ai-complete/issues).
+
+### ⭐ Show Your Support
+
+If this project helped you or you found it interesting, please consider giving it a ⭐️ on GitHub!
+
+---
+
+**Built with ❤️ by the Collabnix Community**
+Alternative Compact Version:
+
+markdown
+## 🙏 Acknowledgments
+
+### Project Team (RajaRajeshwari College of Engineering)
+
+This project emerged from our Docker Bangalore and Collabnix Meetup collaboration:
+
+| Name | Contribution |
+|------|-------------|
+| **Raveendiran RR** | Brainstorming, Technical Ideas & Guidance |
+| **Manish L** | Project Coordination & Team Management |
+| **Jeevitha S** | Dataset Annotation & Quality Assurance |
+| **Jalaj Krishna** | Technical Support & Problem Solving |
+
+### Technology Partners
+
+- 🐳 **Docker** - Containerization platform and community support
+- 🚀 **NVIDIA** - Jetson AGX Thor hardware and CUDA infrastructure
+- 🤖 **Ultralytics** - YOLOv8 framework
+- 🤗 **Hugging Face** - Model hosting and deployment
+- 👥 **Collabnix** - Community support (17,000+ members)
+
+---
+
+*A collaborative effort bringing together
+
+
 
 ## 🌐 Live Demo
 
