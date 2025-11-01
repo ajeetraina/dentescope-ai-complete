@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  # GPU Training Service
+  dentescope-trainer-gpu:
+    build:
+      context: .
+      dockerfile: Dockerfile.gpu-training
+    image: dentescope-ai:gpu-trainer
+    container_name: dentescope-gpu-trainer
+    
+    # GPU Configuration
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    
+    # Environment variables
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - CUDA_VISIBLE_DEVICES=0
+      - TORCH_CUDA_ARCH_LIST=7.0;7.5;8.0;8.6;8.9;9.0
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:512
+      - OMP_NUM_THREADS=8
+      
+    # Volumes
+    volumes:
+      - ./data:/workspace/data
+      - ./models:/workspace/models
+      - ./runs:/workspace/runs
+      - ./scripts:/workspace/scripts
+      - ./logs:/workspace/logs
+    
+    # Shared memory for better performance
+    shm_size: '8gb'
+    
+    # Network
+    network_mode: "host"
+    
+    # Restart policy
+    restart: unless-stopped
+    
+    # Command - start training
+    command: python /workspace/scripts/train_gpu.py
+    
+  # TensorBoard for training monitoring
+  tensorboard:
+    image: tensorflow/tensorflow:latest
+    container_name: dentescope-tensorboard
+    ports:
+      - "6006:6006"
+    volumes:
+      - ./runs:/logs
+    command: tensorboard --logdir /logs --host 0.0.0.0 --port 6006
+    restart: unless-stopped
+
+  # GPU Monitoring Dashboard
+  gpu-monitor:
+    image: nvidia/cuda:12.1.1-base-ubuntu22.04
+    container_name: dentescope-gpu-monitor
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./logs:/logs
+    command: >
+      sh -c "while true; do 
+        nvidia-smi --query-gpu=timestamp,name,temperature.gpu,utilization.gpu,utilization.memory,memory.used,memory.total,power.draw --format=csv,noheader >> /logs/gpu_monitor.log; 
+        sleep 5; 
+      done"
+    restart: unless-stopped
