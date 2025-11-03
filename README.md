@@ -9,7 +9,7 @@
 
 **Production-ready AI system for automated tooth detection in dental panoramic X-rays**
 
-[🚀 Live Demo](https://huggingface.co/spaces/ajeetsraina/dentescope-ai) • [📖 Blog Post](BLOG_POST.md) • [💻 GitHub](https://github.com/ajeetraina/dentescope-ai-complete)
+[🚀 Live Demo](https://huggingface.co/spaces/ajeetsraina/dentescope-ai) • [📖 Blog Post](https://www.ajeetraina.com/building-production-grade-dental-ai-from-auto-annotation-to-99-5-accuracy-with-yolov8-and-nvidia-infrastructure/) • [💻 GitHub](https://github.com/ajeetraina/dentescope-ai-complete)
 
 ![Analysis Results](results/width_analysis/tooth_width_analysis_charts.png)
 
