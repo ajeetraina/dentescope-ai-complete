@@ -677,7 +677,7 @@ dentescope-ai-complete/
 
 ## 📖 Documentation
 
-- **[Complete Blog Post](BLOG_POST.md)** - Full step-by-step guide with all code
+- **[Complete Blog Post](https://www.ajeetraina.com/building-production-grade-dental-ai-from-auto-annotation-to-99-5-accuracy-with-yolov8-and-nvidia-infrastructure/)** - Full step-by-step guide with all code
 - **[Live Demo](https://huggingface.co/spaces/ajeetsraina/dentescope-ai)** - Try it now!
 - **[GitHub Repository](https://github.com/ajeetraina/dentescope-ai-complete)** - Source code
 
@@ -689,111 +689,11 @@ dentescope-ai-complete/
 - [Hugging Face Spaces Documentation](https://huggingface.co/docs/hub/spaces)
 - [Docker Documentation](https://docs.docker.com/)
 
----
 
-## 🔮 Future Enhancements
 
-### Short-term (1-3 months)
-- [ ] Multi-tooth classification (incisors, canines, molars, premolars)
-- [ ] Individual tooth numbering (FDI/Universal notation)
-- [ ] Improved calibration for accurate mm measurements
-- [ ] Mobile app deployment (iOS/Android)
-- [ ] Real-time video processing
-- [ ] Batch processing API
 
-### Long-term (6-12 months)
-- [ ] Disease detection (cavities, infections, bone loss)
-- [ ] Treatment planning recommendations
-- [ ] 3D reconstruction from 2D X-rays
-- [ ] Integration with practice management systems
-- [ ] Multi-modal analysis (notes + images + patient history)
-- [ ] DICOM format support
 
----
 
-## 🤝 Contributing
 
-Contributions are welcome! Whether it's bug fixes, new features, documentation, or examples.
 
-### How to Contribute
 
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Areas for Contribution
-
-- 🐛 Bug fixes and improvements
-- ✨ New features (see roadmap above)
-- 📝 Documentation improvements
-- 🧪 Additional test cases
-- 🎨 UI/UX enhancements
-- 🌍 Internationalization
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-You are free to:
-- ✅ Use commercially
-- ✅ Modify
-- ✅ Distribute
-- ✅ Use privately
-
----
-
-## 🙏 Acknowledgments
-
-- **Ultralytics Team** - For the excellent YOLOv8 framework
-- **NVIDIA** - For Jetson Thor hardware and CUDA support
-- **Hugging Face** - For free model hosting and Spaces platform
-- **Docker** - For containerization technology
-- **Anthropic** - For development assistance
-
----
-
-## 📞 Contact
-
-**Ajeet Singh Raina**  
-Docker Captain | AI/ML Engineer | Community Leader
-
-- 🌐 Website: [collabnix.com](https://collabnix.com)
-- 💼 LinkedIn: [ajeetsraina](https://linkedin.com/in/ajeetsraina)
-- 🐙 GitHub: [@ajeetraina](https://github.com/ajeetraina)
-- 🐦 Twitter: [@ajeetsraina](https://twitter.com/ajeetsraina)
-- 📧 Email: ajeet.raina@docker.com
-
-### Questions or Issues?
-
-- 🐛 [Report a bug](https://github.com/ajeetraina/dentescope-ai-complete/issues)
-- 💡 [Request a feature](https://github.com/ajeetraina/dentescope-ai-complete/issues)
-- 💬 [Start a discussion](https://github.com/ajeetraina/dentescope-ai-complete/discussions)
-
----
-
-## 📊 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/ajeetraina/dentescope-ai-complete?style=social)
-![GitHub forks](https://img.shields.io/github/forks/ajeetraina/dentescope-ai-complete?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/ajeetraina/dentescope-ai-complete?style=social)
-![GitHub issues](https://img.shields.io/github/issues/ajeetraina/dentescope-ai-complete)
-
----
-
-<div align="center">
-
-### ⭐ If you find this project useful, please star the repository! ⭐
-
-**Built with ❤️ by [Ajeet Singh Raina](https://github.com/ajeetraina)**
-
-**Works on any hardware - GPU just makes training faster!**
-
----
-
-**🦷 Dental AI | 🐳 Dockerized | 🚀 Production Ready**
-
-</div>
