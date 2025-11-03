@@ -192,6 +192,60 @@ DenteScope AI is a state-of-the-art deep learning system for automated tooth det
 - 🔄 **Iterative Training** - Self-improving annotation pipeline
 - 💻 **Platform Agnostic** - Runs anywhere (CPU, GPU, cloud, edge)
 - 🌐 **Web Interface** - Live demo on Hugging Face Spaces
+  
+## 🆕 What's New (October 31, 2025)
+
+### ✅ tooth_detection3 - Production Model Achieved 99.5% mAP50
+
+We've successfully trained a production-ready tooth detection model:
+
+- **Accuracy**: 99.5% mAP50
+- **Speed**: 173ms per image (CPU)
+- **Size**: 6.2 MB (highly deployable)
+- **Training**: 33 minutes on Jetson Thor CPU
+- **Status**: ✅ Production Ready
+
+[View Full Training Report →](docs/training-history/OCT_30_31_2025_TRAINING.md)
+
+---
+
+## 🎯 Two Main Projects
+
+### Project 1: 🦷 Tooth Width Detection & Measurement
+**Use Case:** Dimensional analysis of teeth in panoramic X-rays
+
+**Current Model:** tooth_detection3 (99.5% mAP50)
+
+**Quick Start:**
+```bash
+# Run width analysis
+python width-analysis/analyze_tooth_widths.py \
+  --model runs/train/tooth_detection3/weights/best.pt \
+  --images data/valid/images
+```
+
+**Documentation:**
+- [Training Report (Oct 31, 2025)](docs/training-history/OCT_30_31_2025_TRAINING.md)
+- [Width Analysis Guide](width-analysis/README.md)
+- [Model Registry](docs/models/MODEL_REGISTRY.md)
+
+---
+
+### Project 2: 🏥 Pathology Detection (Planned)
+**Use Case:** Detection of dental diseases and conditions
+
+**Status:** 🚧 In Development
+
+**Planned Features:**
+- Cavity detection
+- Bone loss analysis
+- Infection identification
+- Root canal assessment
+
+**Documentation:** Coming soon
+
+---
+
 
 ---
 
