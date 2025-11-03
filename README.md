@@ -317,8 +317,13 @@ git clone https://github.com/ajeetraina/dentescope-ai-complete.git
 cd dentescope-ai-complete
 
 # Install dependencies
-pip install ultralytics opencv-python pillow pyyaml matplotlib pandas openpyxl
+pip install ultralytics opencv-python pillow pyyaml matplotlib pandas openpyxl --break-system-packages
 ```
+
+# Create proper directory structure
+mkdir -p data/train/images data/train/labels
+mkdir -p data/val/images data/val/labels
+
 
 ### Run Inference
 ```python
