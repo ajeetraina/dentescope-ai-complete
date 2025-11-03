@@ -206,7 +206,7 @@ DenteScope AI is a state-of-the-art deep learning system for automated tooth det
 - Detection confidence: 93.3% average
 - Inference time: 571ms per image (CPU)
 
-[View Training Details →](docs/training-history/OCT_30_31_2025_TRAINING.md)
+[View Training Details →](docs/training-history/NOV_01_2025_TRAINING.md)
 
 
 
